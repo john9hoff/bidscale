@@ -1,0 +1,18 @@
+{
+  "name": "bidscale",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"sls offline --httpPort 3001 -t\" \"sls dynamodb start\""
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1185.0",
+    "concurrently": "^4.0.0",
+    "csvtojson": "^2.0.10"
+  },
+  "devDependencies": {
+    "serverless-dynamodb-local": "^0.2.35",
+    "serverless-offline": "^8.5.0",
+    "serverless-plugin-include-dependencies": "^5.0.0"
+  }
+}
